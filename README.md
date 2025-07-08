@@ -38,7 +38,9 @@ In the same directory as your script, create a file named .env. This file will s
 Add your wallet's private key or mnemonic phrase to this file:
 ```bash
 PRIVATE_KEY_OR_MNEMONIC="your_24_word_mnemonic_phrase_here"
+```
 -----------------------------------------------------------
+```bash
 PRIVATE_KEY_OR_MNEMONIC="your_64_character_private_key_here"
 ```
 
