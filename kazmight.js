@@ -122,7 +122,7 @@ const logger = {
  ╚════╝ ╚═╝  ╚═╝ ╚════╝   ╚═════╝    ╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚═╝
 `);
         console.log(Colors.FgMagenta + '      OROSWAP Testnet Auto Swapper & Liquidity Provider' + Colors.Reset);
-        console.log(Colors.FgMagenta + '                    Author : Kazmight' + Colors.Reset);
+        console.log(Colors.FgMagenta + '                Script Author : Kazmight' + Colors.Reset);
         console.log(Colors.FgMagenta + '          -------------------------------------' + Colors.Reset);
         console.log(Colors.Reset); 
     }
