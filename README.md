@@ -50,13 +50,14 @@ To run the script, execute the following command in your terminal:
 node kazmight.js
 ```
 
-##IMPORTANT:
+## IMPORTANT:
 
 Do not share your .env file or commit it to public repositories. Your private key/mnemonic grants full access to your funds.
 For testnet operations, it's highly recommended to use a dedicated testnet wallet with no real funds.
-
 Review oroswap-bot.js constants (Optional):
-The script contains several constants at the top that you might want to review, such as RPC_URL, API_URL, TOKEN_SYMBOLS, TOKEN_PAIRS, TOKEN_DECIMALS, SWAP_SEQUENCE, and LIQUIDITY_PAIRS. These are pre-configured for the OrosWap Testnet.
+The script contains several constants at the top that you might want to review, such as 
+RPC_URL, API_URL, TOKEN_SYMBOLS, TOKEN_PAIRS, TOKEN_DECIMALS, SWAP_SEQUENCE, and LIQUIDITY_PAIRS. 
+These are pre-configured for the OrosWap Testnet.
 
 
 The script will then prompt you for the following inputs:
