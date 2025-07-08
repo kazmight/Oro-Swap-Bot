@@ -1,4 +1,4 @@
-## OrosWap Testnet Auto Swapper & Liquidity Provider
+## OroSwap Testnet Auto Swapper & Liquidity Provider
 This script automates interactions with the OrosWap Testnet, allowing users to perform automated token swaps and add liquidity to various pools. It's designed for testing and interacting with the OrosWap decentralized exchange on the ZigChain testnet.
 
 ## Features
