@@ -10,7 +10,13 @@ Real-time Balance & Point Tracking: Displays current token balances and OrosWap 
 Robust Logging: Provides clear, color-coded logs for various operations (info, warn, error, success, swap, liquidity).
 RPC Call Rate Limiting: Includes a delay mechanism to prevent overwhelming the RPC endpoint.
 
-##Prerequisites
+## Token yang Didukung:
+ZIG, ORO, NFA DAN CULTCOIN 
+
+## Pasangan Token (Pools):
+ORO/ZIG, NFA/ZIG DAN CULTCOIN/ZIG
+
+## Prerequisites
 Before running the script, ensure you have the following installed:
 Node.js: Version 14 or higher.
 npm (Node Package Manager): Comes with Node.js installation.
@@ -66,25 +72,3 @@ JUMLAH TOTAL PENAMBAHAN LIKUIDITAS yang diinginkan per siklus gabungan: The tota
 Penundaan antar transaksi individu (detik): The delay (in seconds) between each individual swap or liquidity transaction.
 Penundaan antar siklus gabungan (menit): The delay (in minutes) between each full combined cycle of swaps and liquidity additions.
 The script will then proceed to execute the operations based on your inputs, providing real-time logs of its progress.
-
-## Logger
-The script uses a custom logger with color-coded output and symbols to make the console output more readable:
-[INFO]: General information messages (Blue)
-[WARN]: Warning messages (Yellow)
-[ERROR]: Error messages (Red)
-[SUCCESS]: Successful operation messages (Green)
-[STEP]: Indicates a new step in the automation process (Cyan)
-[SWAP]: Messages related to swap operations (Magenta)
-[SWAP_OK]: Successful swap operations (Green)
-[LIQUIDITY]: Messages related to liquidity operations (Magenta)
-[LIQUIDITY_OK]: Successful liquidity operations (Green)
-
-Important Notes
-- Testnet Only: This script is intended for the OrosWap Testnet. Do not use it on mainnet with real funds unless you fully understand the implications and risks.
-- Transaction Fees: Transactions on the blockchain incur gas fees. Ensure your wallet has sufficient ZIG (uzig) balance to cover these fees.
-- Impermanent Loss: Providing liquidity to pools carries the risk of impermanent loss. Understand this concept before adding liquidity.
-- RPC Rate Limiting: The script includes a basic delay between RPC calls to avoid hitting rate limits. If you encounter frequent 429 errors or timeouts, consider increasing - - MIN_DELAY_BETWEEN_RPC_CALLS in the script.
-- Error Handling: The script includes basic error handling for network issues and failed transactions, but it's not exhaustive. Always monitor the logs.
-- Balance Checks: The script attempts to check balances before performing swaps or liquidity additions and will skip operations if funds are insufficient or pool balances are too low.
-- Belief Price & Slippage: The belief_price is calculated dynamically, and max_spread (for swaps) and slippage_tolerance (for liquidity) are set to fixed values (0.005 and 0.5 respectively). 
-- You may adjust these if needed, but be aware of the implications on transaction success and potential price impact.
