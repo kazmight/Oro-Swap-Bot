@@ -15,7 +15,7 @@ const FALLBACK_ZIGCHAIN_API_URL = 'https://testnet-api.zigchain.com';
 const EXPLORER_URL = 'https://zigscan.org/tx/';
 const GAS_PRICE = GasPrice.fromString('0.026uzig');
 
-
+  
 const TOKEN_SYMBOLS = {
     'uzig': 'ZIG',
     'coin.zig10rfjm85jmzfhravjwpq3hcdz8ngxg7lxd0drkr.uoro': 'ORO',
